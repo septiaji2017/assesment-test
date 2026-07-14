@@ -1,16 +1,42 @@
-# React + Vite
+# Frontend Assessment Test (ReactJS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Proyek ini adalah mini-aplikasi direktori produk yang dibangun menggunakan ReactJS (Vite), Redux Toolkit, dan React Router. Proyek ini sudah dilengkapi dengan sistem autentikasi (Protected Routes), manajemen state global untuk CRUD produk (Local State Mutation), serta integrasi CI/CD menggunakan GitHub Actions.
 
-Currently, two official plugins are available:
+## Tech Stack
+- **Library Utama:** ReactJS (Vite)
+- **State Management:** Redux Toolkit (@reduxjs/toolkit & react-redux)
+- **Routing:** React Router DOM (v7)
+- **API Target:** [DummyJSON API](https://dummyjson.com)
+- **CI/CD:** GitHub Actions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Kredensial Uji Coba (Login)
+Untuk masuk ke halaman beranda, silakan gunakan akun berikut:
+- **Username:** `emilys`
+- **Password:** `emilyspass`
 
-## React Compiler
+## Panduan Penggunaan (Lokal)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Ikuti langkah-langkah berikut untuk menjalankan proyek di komputer lokal Anda:
 
-## Expanding the Oxlint configuration
+### 1. Clone Repository
+```bash
+git clone <url-repository-github-anda>
+cd <nama-folder-project>
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Jalankan Mode Development
+```bash
+npm run dev
+```
+Setelah berjalan, buka tautan lokal yang tertera pada terminal (biasanya `http://localhost:5173`).
+
+### 4. Build untuk Production
+```bash
+npm run build
+```
+Perintah ini akan memvalidasi tipe kode dan menghasilkan folder `dist` yang siap untuk dideploy ke platform hosting seperti Vercel atau Netlify.

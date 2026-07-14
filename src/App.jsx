@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { store } from './store';
 import Login from './pages/Login';
 import Home from './pages/Home';
+import NotFound from './pages/NotFound';
 import ProductDetail from './pages/ProductDetail';
 import ProtectedRoute from './components/ProtectedRoute';
 import './App.css';
@@ -30,6 +31,8 @@ const App = () => {
               </ProtectedRoute>
             } 
           />
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </Provider>
